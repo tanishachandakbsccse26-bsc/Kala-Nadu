@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Culture and Lifestyle | Kala Nadu</title>
+
+    <style>
+
+        body {
+            background: linear-gradient(to right, #f5e6d5, #e8cdb5, #f8eee3);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: #493326;
+        }
+        header {
+            background: linear-gradient(to right, #842f1d, #d98232);
+            color: white;
+            text-align: left;
+            padding: 16px 35px;
+            display:flex;
+            align-items:center;
+        }
+
+        header h1 {
+           font-size: 25px;
+           margin:0 10px 0 0;
+        }
+       header p{
+           margin:0 10px;
+           font-size:15px;
+        }
+       nav {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: auto;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+     nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px;
+        }
+       nav a:hover {
+            color: #f5d36b;
+            border-bottom: 2px solid #f5d36b;
+        }
+
+        .content {
+            margin: 15px;
+            padding: 15px;
+            background-color: #fffaf3;
+            border-radius: 12px;
+        }
+
+        .intro {
+            background-color: #ead5c0;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #874b2d;
+            font-size: 26px;
+            margin-top: 35px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        table {
+            width: 95%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fffaf3;
+        }
+
+        th, td {
+            border: 1px solid #b99a7b;
+            padding: 15px;
+            text-align: left;
+            font-size: 15px;
+        }
+
+        th {
+            background-color: #955638;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f0dfcf;
+        }
+
+        tr:hover {
+            background-color: #e5c6aa;
+        }
+
+        .section {
+            background-color: #f7eee4;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        button {
+            background-color: #955638;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 8px;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        button:hover {
+            background-color: #613b29;
+        }
+
+        .gallery {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .photo {
+            display: inline-block;
+            width: 42%;
+            margin: 12px 2%;
+            vertical-align: top;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 190px;
+            object-fit: fill;
+            display:block;
+            border-radius: 10px;
+        }
+
+        .photo p {
+            color: #874b2d;
+            font-weight: bold;
+        }
+
+        .fact {
+            background-color: #ead5c0;
+            padding: 20px;
+            margin-top: 30px;
+            border-left: 5px solid #955638;
+        }
+        footer {
+            background-color: #54271d;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        #moreFood, #festivalInfo, #lifeInfo {
+            display: none;
+            background-color: #ead5c0;
+            padding: 18px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 600px) {
+
+            .content {
+                margin: 10px;
+                padding: 12px;
+            }
+
+            .photo {
+                display: block;
+                width: 90%;
+                margin: 15px auto;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            th, td {
+                padding: 8px;
+                font-size: 13px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>ಕಲಾ ನಾಡು | KALA NADU</h1>
+    <p>The Land of Art. Our Roots. Our Karnataka.</p>
+
+
+   <nav>
+     <a href="home.html">Home</a>
+     <a href="art.html">Art & Traditions</a>
+     <a href="hidden.html">Hidden Karnataka</a>
+     <a href="quiz.php">Quiz</a>
+     <a href="feedback.php">Feedback</a>
+  </nav>
+</header>
+
+<section class="content">
+
+    <div class="intro">
+
+        <h1>Culture and Lifestyle of Karnataka</h1>
+
+        <p>
+            Karnataka is a beautiful blend of traditional values
+            and modern lifestyles. Its culture is reflected in
+            festivals, food, clothing, languages and everyday life.
+            Every region has its own identity and traditions.
+        </p>
+
+        <button onclick="welcomeMessage()">
+            Explore Karnataka
+        </button>
+
+    </div>
+    
+    <h2>1. Festivals and Celebrations</h2>
+
+    <p>
+        Festivals bring families and communities together.
+        Karnataka celebrates many colourful festivals throughout
+        the year.
+    </p>
+
+    <table>
+
+        <tr>
+            <th>Festival</th>
+            <th>Significance</th>
+            <th>Celebrations</th>
+        </tr>
+
+        <tr>
+            <td>Mysuru Dasara</td>
+            <td>Celebrates the victory of good over evil.</td>
+            <td>Processions and grand decorations.</td>
+        </tr>
+
+        <tr>
+            <td>Ugadi</td>
+            <td>Kannada New Year.</td>
+            <td>Special dishes and family gatherings.</td>
+        </tr>
+
+        <tr>
+            <td>Makara Sankranti</td>
+            <td>Harvest festival.</td>
+            <td>Traditional sweets and celebrations.</td>
+        </tr>
+
+        <tr>
+            <td>Karaga</td>
+            <td>Traditional Bengaluru festival.</td>
+            <td>Night-time procession and celebrations.</td>
+        </tr>
+
+    </table>
+
+    <button onclick="showFestival()">
+        Know More About Festivals
+    </button>
+
+    <div id="festivalInfo">
+        <h3>Mysuru Dasara</h3>
+        <p>
+            Mysuru Dasara is a famous ten-day celebration.
+            The Mysore Palace is illuminated, and the city
+            hosts cultural programmes and grand processions.
+        </p>
+    </div>
+
+
+    <h2>2. Traditional Clothing</h2>
+
+    <p>
+        Traditional clothing reflects the beauty and diversity
+        of Karnataka. Different regions have their own styles
+        of dressing.
+    </p>
+
+    <table>
+
+        <tr>
+            <th>Clothing</th>
+            <th>Description</th>
+            <th>Famous For</th>
+        </tr>
+
+        <tr>
+            <td>Mysore Silk Saree</td>
+            <td>Soft silk with beautiful designs.</td>
+            <td>Mysuru</td>
+        </tr>
+
+        <tr>
+            <td>Ilkal Saree</td>
+            <td>Traditional handloom saree.</td>
+            <td>Ilkal</td>
+        </tr>
+
+        <tr>
+            <td>Coorgi Attire</td>
+            <td>Distinctive traditional clothing.</td>
+            <td>Coorg</td>
+        </tr>
+
+        <tr>
+            <td>Dhoti</td>
+            <td>Traditional attire worn by men.</td>
+            <td>Various regions</td>
+        </tr>
+
+    </table>
+
+
+    <h2>3. Food and Cuisine</h2>
+
+    <p>
+        Karnataka is famous for its delicious food.
+        Different regions offer different flavours,
+        ingredients and cooking styles.
+    </p>
+
+    <table>
+
+        <tr>
+            <th>Food</th>
+            <th>Main Ingredients</th>
+            <th>Speciality</th>
+        </tr>
+
+        <tr>
+            <td>Masala Dosa</td>
+            <td>Rice, lentils and potato.</td>
+            <td>Crispy dosa with potato filling.</td>
+        </tr>
+
+        <tr>
+            <td>Bisi Bele Bath</td>
+            <td>Rice, lentils and vegetables.</td>
+            <td>Traditional spicy rice dish.</td>
+        </tr>
+
+        <tr>
+            <td>Ragi Mudde</td>
+            <td>Finger millet flour.</td>
+            <td>Traditional nutritious food.</td>
+        </tr>
+
+        <tr>
+            <td>Akki Roti</td>
+            <td>Rice flour.</td>
+            <td>Traditional rice flatbread.</td>
+        </tr>
+
+        <tr>
+            <td>Mysore Pak</td>
+            <td>Gram flour, sugar and ghee.</td>
+            <td>Popular traditional sweet.</td>
+        </tr>
+
+    </table>
+
+    <button onclick="showFood()">
+        Explore More Food
+    </button>
+
+    <div id="moreFood">
+
+        <h3>More Delicious Dishes</h3>
+
+        <p>
+            Karnataka also offers Puliyogare, Neer Dosa,
+            Maddur Vada, Kesari Bath and Dharwad Peda.
+            Each dish represents a different regional flavour.
+        </p>
+
+    </div>
+
+
+    <h2>4. Languages and Daily Life</h2>
+
+    <table>
+
+        <tr>
+            <th>Aspect</th>
+            <th>Description</th>
+        </tr>
+
+        <tr>
+            <td>Official Language</td>
+            <td>Kannada</td>
+        </tr>
+
+        <tr>
+            <td>Other Languages</td>
+            <td>Tulu, Konkani and Kodava, among others.</td>
+        </tr>
+
+        <tr>
+            <td>Family Life</td>
+            <td>Family gatherings and celebrations are important.</td>
+        </tr>
+
+        <tr>
+            <td>Shopping</td>
+            <td>Local markets are popular places for shopping.</td>
+        </tr>
+
+        <tr>
+            <td>Daily Activities</td>
+            <td>Education, work, festivals and community activities.</td>
+        </tr>
+
+    </table>
+
+
+    <h2>5. Modern Lifestyle</h2>
+
+    <table>
+
+        <tr>
+            <th>City / Region</th>
+            <th>Known For</th>
+        </tr>
+
+        <tr>
+            <td>Bengaluru</td>
+            <td>Technology, education and modern urban life.</td>
+        </tr>
+
+        <tr>
+            <td>Mysuru</td>
+            <td>Heritage, tourism and peaceful lifestyle.</td>
+        </tr>
+
+        <tr>
+            <td>Mangaluru</td>
+            <td>Coastal lifestyle and seafood cuisine.</td>
+        </tr>
+
+        <tr>
+            <td>Coorg</td>
+            <td>Coffee plantations and natural beauty.</td>
+        </tr>
+
+    </table>
+
+    <button onclick="showLifestyle()">
+        Discover Modern Karnataka
+    </button>
+
+    <div id="lifeInfo">
+
+        <h3>Karnataka Today</h3>
+
+        <p>
+            Karnataka combines its cultural heritage with
+            modern development. Bengaluru is known for
+            technology, startups and educational institutions,
+            while many other regions preserve their traditional
+            lifestyles.
+        </p>
+
+    </div>
+
+
+    <div class="gallery">
+
+        <h2>Culture and Lifestyle Gallery</h2>
+
+        <div class="photo">
+            <img src="mysuru dasara.webp" alt="Mysuru Dasara">
+            <p>Mysuru Dasara</p>
+        </div>
+
+        <div class="photo">
+            <img src="traditional2.jpg" alt="Traditions">
+            <p>Traditional Clothing</p>
+        </div>
+
+        <div class="photo">
+            <img src="Karnataka+Cuisine+++Must+have+foods+in+karnataka-bl12452.jpg" alt="Karnataka food">
+            <p>Traditional Food</p>
+        </div>
+
+        <div class="photo">
+            <img src="bengalurur city.jpg" alt="Bengaluru city">
+            <p>Modern Lifestyle</p>
+        </div>
+
+    </div>
+   <footer>
+
+     <p>©️ 2026 KALA NADU | Celebrating the Heritage of Karnataka</p>
+
+     <p>Explore • Experience • Celebrate</p>
+
+   </footer>
+
+
+
+
+    
+    
+
+
+
+
+</section>
+
+
+<script>
+
+    function welcomeMessage() {
+
+        alert("Welcome to KALA NADU! Discover the beautiful culture of Karnataka.");
+
+    }
+
+
+    function showFestival() {
+
+        var x = document.getElementById("festivalInfo");
+
+        if (x.style.display == "none") {
+            x.style.display = "block";
+        }
+
+        else {
+            x.style.display = "none";
+        }
+
+    }
+
+
+    function showFood() {
+
+        var x = document.getElementById("moreFood");
+
+        if (x.style.display == "none") {
+            x.style.display = "block";
+        }
+
+        else {
+            x.style.display = "none";
+        }
+
+    }
+
+
+    function showLifestyle() {
+
+        var x = document.getElementById("lifeInfo");
+
+        if (x.style.display == "none") {
+            x.style.display = "block";
+        }
+
+        else {
+            x.style.display = "none";
+        }
+
+    }
+
+
+
+</script>
+
+</body>
+
+</html>

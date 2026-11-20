@@ -1,12 +1,7 @@
 
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-CREATE DATABASE kala_nadu
-USE kala_Nadu
+CREATE DATABASE kala_nadu;
+USE kala_nadu;
 
 CREATE TABLE `feedback` (
   `id` int(11) NOT NULL,

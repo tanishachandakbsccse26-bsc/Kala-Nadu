@@ -258,10 +258,10 @@ footer {
         <div class="question">
             <h3>5. Which is a famous traditional food of Karnataka?</h3>
 
-            <label><input type="radio" name="q5" value="Bisi Bele Bath" required> Bisi Bele Bath</label>
-            <label><input type="radio" name="q5" value="Dhokla"> Dhokla</label>
-            <label><input type="radio" name="q5" value="Poha"> Poha</label>
-            <label><input type="radio" name="q5" value="Litti Chokha"> Litti Chokha</label>
+            <label><input type="radio" name="q5" value="Mysore pak" required> Mysore pak</label>
+            <label><input type="radio" name="q5" value="Ragi Mudde"> Rag Mudde</label>
+            <label><input type="radio" name="q5" value="Masala Dosa">Masala dosa</label>
+            <label><input type="radio" name="q5" value="Bisi bele bath"> Bisi bele bath</label>
         </div>
 
         <button type="submit" name="submit">Unlock My Result!</button>
